@@ -1,11 +1,12 @@
 import React from "react";
 import { socialMediaHandles } from "../constants";
+import { SectionWrapper } from "../hoc";
 
 const Footer = () => {
   return (
     <footer className="bg-transparent flex flex-wrap max-w-full xs:h-20 md:h-16 justify-center items-center">
           <h3 className="text-[18px]" style={{fontFamily: "Josefin Sans"}}>Made with 💜 by Omkar Kalepu</h3>
-      <div className="flex xs:justify-center flex-row w-9/12 md:justify-end gap-3">
+      <div className="flex justify-center flex-row w-9/12 md:justify-end gap-3">
         {socialMediaHandles.map((app, index) => (
           <img
             src={app.icon}
@@ -20,4 +21,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default SectionWrapper(Footer, "");
