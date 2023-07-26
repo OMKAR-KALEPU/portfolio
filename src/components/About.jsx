@@ -3,8 +3,9 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import { myPhoto } from "../assets";
 import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { slideIn, fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -40,23 +41,54 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-2 text-secondary text-[16px] max-w-full text-justify leading-[25px]"
-      >
-        Harnessing the power of JavaScript's incantations, I weave intricate
-        webs of logic, casting spells that transform raw data into meaningful
-        insights. With Node.js, I summon the strength of servers, orchestrating
-        the flow of information with grace and precision. React.js becomes my
-        enchanted wand, empowering me to breathe life into captivating user
-        interfaces, where every interaction becomes a delightful experience.
-        Together, we will conquer the realms of real-world problems, forging a
-        path towards digital innovation. So let our collaboration begin, as we
-        embark on a journey where imagination and code intertwine, creating
-        magic that surpasses even the wildest dreams.
-      </motion.p>
+      <div className="flex flex-wrap w-70 m-auto mb-10 justify-center items-center">
+        <Tilt className="xs:w-[250px]">
+          <motion.div
+            variants={slideIn("left", "tween", 0.5, 1)}
+            className="flex flex-row w-full"
+          >
+            <div
+              options={{
+                max: 45,
+                scale: 1,
+                speed: 450,
+              }}
+              className="rounded-[20px] my-16 "
+            >
+              <img
+                src={myPhoto}
+                alt="title"
+                style={{ borderRadius: "100%" }}
+                className="w-full h-full"
+              />
+            </div>
+          </motion.div>
+        </Tilt>
 
-      <div className="mt-10 flex flex-wrap gap-10">
+        <div className="sm:ml-12 flex flex-col justify-center items-center sm:items-start">
+          <div className="flex">
+            <motion.p
+              className="text-secondary text-justify text-[17px] max-w-2xl leading-[28px]"
+              variants={fadeIn("up", "spring", 0.5, 0.75)}
+            >
+              As an undergraduate engineering student with a deep passion for
+              web development, I focus on building innovative and interactive
+              web applications that engage users. JavaScript is my superpower,
+              and I thrive in leveraging its potential, especially in
+              combination with popular frameworks like React. My dedication to
+              mastering the MERN stack allows me to create seamless and
+              efficient digital experiences that leave a lasting impression.
+              Let's collaborate and create web magic with the power of the MERN
+              stack and JavaScript!
+            </motion.p>
+          </div>
+        </div>
+      </div>
+
+      <motion.div variants={textVariant()}>
+        <h2 className={styles.sectionHeadText}>Roles & Responsibilities.</h2>
+      </motion.div>
+      <div className="mt-10 flex flex-wrap gap-10 justify-center items-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

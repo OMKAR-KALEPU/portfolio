@@ -14,10 +14,18 @@ const Tech = () => {
         <h2 className={styles.sectionHeadText}>Tools & Technologies.</h2>
       </motion.div>
 
-      <div className="flex flex-row flex-wrap justify-center gap-10">
+      <div className="flex flex-row xs:hidden sm:flex flex-wrap justify-center gap-10">
         {technologies.map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
             <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+      </div>
+
+      <div className="flex flex-row sm:hidden flex-wrap justify-center gap-10">
+        {technologies.map((technology) => (
+          <div className="w-28 h-28" key={technology.name}>
+            <img src={technology.icon} />
           </div>
         ))}
       </div>
