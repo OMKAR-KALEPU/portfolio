@@ -86,7 +86,7 @@ const About = () => {
       </div>
 
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>Roles & Responsibilities.</h2>
+        <h2 className={styles.sectionHeadText}>Roles.</h2>
       </motion.div>
       <div className="mt-10 flex flex-wrap gap-10 justify-center items-center">
         {services.map((service, index) => (

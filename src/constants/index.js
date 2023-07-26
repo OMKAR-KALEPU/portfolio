@@ -183,7 +183,7 @@ const projects = [
     source_code_link: "https://github.com/OMKAR-KALEPU/the-blind-assist",
   },
   {
-    name: "Todo App",
+    name: "Full Stack Todo App",
     description:
       "To-Do List project is an application specially built to keep track of errands or tasks that need to be done. This is a beginner project with MERN stack. This is a complete todo-app created using React-Class Components with basic CRUD operations. Users can store their everyday activities.",
     tags: [

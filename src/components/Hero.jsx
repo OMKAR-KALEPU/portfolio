@@ -8,7 +8,7 @@ const Hero = () => {
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 600px)");
+    const mediaQuery = window.matchMedia("(min-width: 320px) and (max-width: 600px)");
 
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
@@ -54,7 +54,7 @@ const Hero = () => {
       </section>
 
       {isMobile && (
-        <div className="z-99 mt-[-450px]">
+        <div className="z-99 mt-[-500px]">
           <img
             src={Home}
             alt="Mobile Home"
