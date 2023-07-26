@@ -1,8 +1,23 @@
-# React + Vite
+# Portfolio
+This is a portfolio website boostrapped with `npm create vite@latest ./ -- --template react`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Run the app
+- Clone the repository.
+```
+git clone https://github.com/OMKAR-KALEPU/portfolio
+```
 
-Currently, two official plugins are available:
+- Install dependencies.
+```
+npm install
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Start the vite app.
+```
+npm run dev
+```
+
+- The App is live.
+```
+ http://localhost:5173/
+```
