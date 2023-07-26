@@ -3,7 +3,6 @@ import {
   creator,
   web,
   java,
-  sql,
   javascript,
   html,
   postman,
@@ -15,12 +14,15 @@ import {
   nodejs,
   mongodb,
   git,
-  githubDark,
   zyxan,
   gssoc,
+  todoApp,
   currencyDetector,
-  carrent,
-  tripguide,
+  stackoverflow,
+  github,
+  linkedIn,
+  twitter,
+  instagram,
 } from "../assets";
 
 export const navLinks = [
@@ -91,16 +93,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "SQL",
-    icon: sql,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "github",
-    icon: githubDark,
   },
   {
     name: "Postman",
@@ -109,7 +103,7 @@ const technologies = [
   {
     name: "java",
     icon: java,
-  }
+  },
 ];
 
 const experiences = [
@@ -143,25 +137,29 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Stack Overflow Clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A Stack Overflow clone built using the MERN stack, providing a platform for users to ask and answer programming-related questions. Features include user authentication, voting, and sorting to facilitate a vibrant community of developers seeking and sharing knowledge.",
     tags: [
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "express",
+        color: "orange-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "node.js",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: stackoverflow,
+    source_code_link: "https://github.com/OMKAR-KALEPU/StackOverflow-Clone",
   },
   {
     name: "The Blind Assist",
@@ -182,29 +180,56 @@ const projects = [
       },
     ],
     image: currencyDetector,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/OMKAR-KALEPU/the-blind-assist",
   },
   {
-    name: "Trip Guide",
+    name: "Todo App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "To-Do List project is an application specially built to keep track of errands or tasks that need to be done. This is a beginner project with MERN stack. This is a complete todo-app created using React-Class Components with basic CRUD operations. Users can store their everyday activities.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "express",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node.js",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/OMKAR-KALEPU",
+    image: todoApp,
+    source_code_link: "https://github.com/OMKAR-KALEPU/todo_app",
   },
 ];
 
-export { services, technologies, experiences, projects };
+const socialMediaHandles = [
+  {
+    name: "GitHub",
+    icon: github,
+    link: "https://github.com/OMKAR-KALEPU",
+  },
+  {
+    name: "LinkedIn",
+    icon: linkedIn,
+    link: "https://www.linkedin.com/in/omkar-kalepu-7a6718219/",
+  },
+  {
+    name: "Twitter",
+    icon: twitter,
+    link: "https://twitter.com/Omkarstwt",
+  },
+  {
+    name: "Instagram",
+    icon: instagram,
+    link: "https://www.instagram.com/omkar.kalepu/",
+  },
+];
+
+export { services, technologies, experiences, projects, socialMediaHandles };
