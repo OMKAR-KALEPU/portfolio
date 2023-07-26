@@ -8,6 +8,7 @@ import close from "./close.svg";
 import instagram from "./instagram.png";
 import linkedIn from "./linkedIn.png";
 import twitter from "./twitter.png";
+import myPhoto from "./myPhoto.png";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -19,22 +20,20 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import mui from "./tech/mui.png";
 import tailwind from "./tech/tailwind.png";
-import githubDark from "./tech/github-dark.png";
 import postman from "./tech/postman.png";
 import java from "./tech/java.png";
-import sql from "./tech/sql.png";
 
 import zyxan from "./company/zyxan.png";
 import gssoc from "./company/gssoc.png";
 import ssoc from "./company/ssoc.jpg";
 
+import todoApp from "./projects/todoApp.png";
 import currencyDetector from "./projects/currency_predictor.png";
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import stackoverflow from "./projects/stackoverflow.png";
 
 export {
   logo,
+  myPhoto,
   backend,
   creator,
   instagram,
@@ -46,7 +45,6 @@ export {
   close,
   css,
   git,
-  githubDark,
   html,
   postman,
   javascript,
@@ -55,14 +53,12 @@ export {
   reactjs,
   redux,
   java,
-  sql,
   mui,
   tailwind,
   zyxan,
   gssoc,
   ssoc,
+  todoApp,
   currencyDetector,
-  carrent,
-  jobit,
-  tripguide,
+  stackoverflow,
 };
